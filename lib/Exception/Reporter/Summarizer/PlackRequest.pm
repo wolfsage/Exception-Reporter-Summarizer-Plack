@@ -1,9 +1,9 @@
 use strict;
 use warnings;
-package Exception::Reporter::Summarizer::Plack;
+package Exception::Reporter::Summarizer::PlackRequest;
 
 use parent 'Exception::Reporter::Summarizer';
-# ABSTRACT: a summarizer for Plack applications
+# ABSTRACT: a summarizer for Plack::Request objects
 
 use Plack::Request;
 

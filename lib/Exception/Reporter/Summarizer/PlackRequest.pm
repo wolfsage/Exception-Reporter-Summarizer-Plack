@@ -69,7 +69,7 @@ sub summarize_request {
   $to_dump{cookies} = $req->cookies;
 
   return {
-    filename => 'request.txt',
+    filename => 'plack_request.txt',
     %{ $self->dump(\%to_dump, { basename => 'request' })  },
     ident    => 'plack request',
   };
